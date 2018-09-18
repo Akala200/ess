@@ -1,8 +1,12 @@
+$(document).ready(function () {
 
-
-
-$(document).ready(function() {
-    $("form").submit(function() {
-        alert("Email successfully sent");
+    $('#form').validate({ // initialize the plugin
+        rules: {
+            field1: {
+                required: true,
+                email: true
+            }
+        }
     });
+
 });
